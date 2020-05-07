@@ -1,0 +1,26 @@
+{
+  "name": "cara_api",
+  "version": "1.0.0",
+  "description": "accessible routing api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milorue/cara_api.git"
+  },
+  "author": "Milo S. Rue",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milorue/cara_api/issues"
+  },
+  "homepage": "https://github.com/milorue/cara_api#readme",
+  "dependencies": {
+    "csv-parser": "^2.3.2",
+    "csvjson-csv2json": "^5.0.6",
+    "express": "^4.17.1",
+    "mongodb-stitch-browser-sdk": "^4.8.0",
+    "mongodb-stitch-server-sdk": "^4.8.0"
+  }
+}
