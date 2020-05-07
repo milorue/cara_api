@@ -32,7 +32,7 @@ const db = 'cara'
 const markers = 'markers'
 
 // processCSV()
-// description: processes raw csv text into a json object array
+// description: processes raw csv text into a json object array then injects it
 // inputs: string csv
 // outputs: json array
 
