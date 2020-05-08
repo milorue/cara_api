@@ -13,6 +13,10 @@ const pwd = stitch_key.password // default stitch user password
 const csv2json = require('csvjson-csv2json')
 const fs = require('fs')
 
+app.get('/', (req, res) => {
+    res.send('Visit /hazards for a list of all hazards')
+})
+
 // need to setup some sort of api key service to handle requests to the api
 
 // stitch initialization routine
