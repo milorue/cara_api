@@ -89,7 +89,7 @@ function createHazard(name, desc, building, type, lat, lng, college){ // could p
 // outputs: BSONObj or -1 for failure to find
 // note: ** more robust filters should be implemented but im kinda rushing/ lazy this is simply going to handle college
 
-function loadHazards(client, db, collection, collegeFilter){
+function loadHazards(client, db, collection){
 
     const mongodb_client = client.getServiceClient(RemoteMongoClient.factory, 'mongodb-atlas') // service name may vary
     const mongodb_db = mongodb_client.db(db)
