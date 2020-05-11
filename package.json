@@ -22,11 +22,14 @@
   ],
   "homepage": "https://github.com/milorue/cara_api#readme",
   "dependencies": {
+    "@turf/helpers": "^6.1.4",
+    "@turf/turf": "^5.1.6",
     "csv-parser": "^2.3.2",
     "csvjson-csv2json": "^5.0.6",
     "express": "^4.17.1",
     "mongodb-stitch-browser-sdk": "^4.8.0",
-    "mongodb-stitch-server-sdk": "^4.8.0"
+    "mongodb-stitch-server-sdk": "^4.8.0",
+    "node-astar": "^0.1.0"
   },
   "engines": {
     "node": "12.16.1"

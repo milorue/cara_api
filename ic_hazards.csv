@@ -1,49 +1,49 @@
 name,description,buildings,type,lat,lng,college
 Job Hall Entrance,"North Side, Near E Lot, PAD. Can access by walking through Textor Hall or from the
-outside which has all PAD doors.","[""Job Hall""]",entrance/exit,42.421654,-76.497376,Ithaca College
+outside which has all PAD doors.","[""Job Hall""]",entrance,42.421654,-76.497376,Ithaca College
 Job Hall Elevator,"Located centrally in building, next to Center for Information Technologies. It provides
 access to all floors","[""Job Hall""]",elevator,42.421559,-76.497301,Ithaca College
 Job Hall Accessible Bathrooms,Accessible bathrooms are located by the elevators in Job Hall (unisex).,"[""Job Hall"", ""Friends Hall""]",bathroom,42.421527,-76.497269,Ithaca College
 Parking Lot E,E lot has 20 spaces,"[""Job Hall"", ""Friends Hall"", ""Textor Hall"", ""Center for Business and Sustainable Enterprise, Dorothy D. and Roy H. Park"", ""Williams Hall"", ""Muller Faculty Center""]",parking,42.422311,-76.496105,Ithaca College
-Friends Hall Entrance,"North Side, near flagpole circle, PAD.","[""Friends Hall""]",entrance/exit,42.421911,-76.496679,Ithaca College
+Friends Hall Entrance,"North Side, near flagpole circle, PAD.","[""Friends Hall""]",entrance,42.421911,-76.496679,Ithaca College
 Friends Hall Accessible Bathrooms,Nearest accessible bathrooms are located in Jobs Hall (unisex) and Phillips Hall.,"[""Job Hall"", ""Friends Hall""]",bathroom,42.421527,-76.497269,Ithaca College
 Friends Hall Access Phone,An access phone is located on the first floor of Friends Hall.,"[""Friends Hall""]",phone,42.421812,-76.496679,Ithaca College
 Friends Hall Water Fountain,An accessible water fountain is located on the first floor of Friends Hall.,"[""Friends Hall""]",water fountain,42.421804,-76.496652,Ithaca College
-Textor Hall Entrance,"North, near flagpole circle, PAD.","[""Friends Hall"", ""Textor Hall"", ""Muller Faculty Center"", ""Job Hall""]",entrance/exit,42.421923,-76.496255,Ithaca College
+Textor Hall Entrance,"North, near flagpole circle, PAD.","[""Friends Hall"", ""Textor Hall"", ""Muller Faculty Center"", ""Job Hall""]",entrance,42.421923,-76.496255,Ithaca College
 Textor Hall Accessible Bathrooms,Located in Phillips Hall next to the Book Store.,"[""Textor Hall"", ""Phillips Hall"", ""Muller Faculty Center""]",bathroom,42.422196,-76.494978,Ithaca College
 Textor AT/ALD,"Textor 101, 102, and 103 have FM systems. Please contact Classroom Technology
 Services for assistance.","[""Textor Hall""]",at/ald,42.421796,-76.496201,Ithaca College
-Textor Hall Classroom Doors,"PAD located at each of the following classrooms: T101, T102, and T103.","[""Textor Hall""]",entrance/exit,42.421796,-76.496201,Ithaca College
-Muller Faculty Center Entrance,"North, near flagpole circle, PAD.","[""Friends Hall"", ""Textor Hall"", ""Muller Faculty Center"", ""Job Hall""]",entrance/exit,42.422074,-76.495708,Ithaca College
+Textor Hall Classroom Doors,"PAD located at each of the following classrooms: T101, T102, and T103.","[""Textor Hall""]",entrance,42.421796,-76.496201,Ithaca College
+Muller Faculty Center Entrance,"North, near flagpole circle, PAD.","[""Friends Hall"", ""Textor Hall"", ""Muller Faculty Center"", ""Job Hall""]",entrance,42.422074,-76.495708,Ithaca College
 Muller Faculty Center Accessible Bathrooms ,Located in Phillips hall next to the Book Store.,"[""Textor Hall"", ""Phillips Hall""]",bathroom,42.422196,-76.494978,Ithaca College
-Muller Chapel Entrance 1,"North side of building, near pond on ground level.","[""Muller Chapel""]",entrance/exit,42.422763,-76.496647,Ithaca College
-Muller Chapel Entrance 2,"East and West entrances on first floor, PAD.","[""Muller Chapel""]",entrance/exit,42.4226,-76.496802,Ithaca College
-Williams Hall Entrance 1,First floor west (PAD),"[""Williams Hall""]",entrance/exit,42.422616,-76.495386,Ithaca College
-Williams Hall Entrance 2,"First floor east, main entrance (PAD)","[""Williams Hall""]",entrance/exit,42.422747,-76.494876,Ithaca College
+Muller Chapel Entrance 1,"North side of building, near pond on ground level.","[""Muller Chapel""]",entrance,42.422763,-76.496647,Ithaca College
+Muller Chapel Entrance 2,"East and West entrances on first floor, PAD.","[""Muller Chapel""]",entrance,42.4226,-76.496802,Ithaca College
+Williams Hall Entrance 1,First floor west (PAD),"[""Williams Hall""]",entrance,42.422616,-76.495386,Ithaca College
+Williams Hall Entrance 2,"First floor east, main entrance (PAD)","[""Williams Hall""]",entrance,42.422747,-76.494876,Ithaca College
 Williams Hall Accessible Bathrooms,"Accessible bathrooms located on first, second, and third floors","[""Williams Hall""]",bathroom,42.422683,-76.495112,Ithaca College
 Williams Hall Elevator,"Located centrally in building, it provides access to all floors, by east entrance","[""Williams Hall""]",elevator,42.422675,-76.494984,Ithaca College
 Parking Lot U,U lot has 11 spaces,"[""Williams Hall"", ""Campus Center"", ""Hammond Health Center""]",parking,42.423079,-76.494528,Ithaca College
 Williams Hall Access Phone,An access phone is located on first floor by the west entrance.,"[""Williams Hall""]",phone,42.422612,-76.495386,Ithaca College
 Williams Hall Water Fountains,Accessible water fountains located throughout the building.,"[""Williams Hall""]",water fountain,42.422675,-76.49515,Ithaca College
 Counseling Center Entrance,"Use the main entrance of the Health Center and access the Counseling Center via
-elevator, PAD.","[""Hammond Health Center"", ""Counseling Center""]",entrance/exit,42.422945,-76.493712,Ithaca College
+elevator, PAD.","[""Hammond Health Center"", ""Counseling Center""]",entrance,42.422945,-76.493712,Ithaca College
 Counseling Center Elevator,"There is a key-operated elevator that connects the health center to the counseling center.
  *For elevator key, contact the Business Office of the Health Center","[""Hammond Health Center"", ""Counseling Center""]",elevator,42.42298,-76.493804,Ithaca College
 Counseling Center Accessible Bathrooms,The nearest accessible bathroom is on the first floor in the Health Center,"[""Hammond Health Center"", ""Counseling Center""]",bathroom,42.42293,-76.493802,Ithaca College
-Hammond Health Center Entrance,"Main entrance, south side of building, PAD","[""Hammond Health Center"", ""Counseling Center""]",entrance/exit,42.422945,-76.493712,Ithaca College
+Hammond Health Center Entrance,"Main entrance, south side of building, PAD","[""Hammond Health Center"", ""Counseling Center""]",entrance,42.422945,-76.493712,Ithaca College
 Hammond Health Center Access Phone,Located by the main entrance,"[""Hammond Health Center"", ""Counseling Center""]",phone,42.422964,-76.493745,Ithaca College
 Hammond Health Center Water Fountain,An accessible water cooler is located in the waiting area,"[""Hammond Health Center"", ""Counseling Center""]",water fountain,42.422964,-76.493745,Ithaca College
-Campus Center Entrance 1,"First floor north, near U lot, PAD","[""Campus Center""]",entrance/exit,42.422628,-76.494367,Ithaca College
-Campus Center Entrance 2,"First floor east, near Campus Center Dining Hall, PAD","[""Campus Center""]",entrance/exit,42.422378,-76.494136,Ithaca College
-Campus Center Entrance 3,"Second floor southwest, near free speech rock area, PAD","[""Campus Center""]",entrance/exit,42.422394,-76.494538,Ithaca College
+Campus Center Entrance 1,"First floor north, near U lot, PAD","[""Campus Center""]",entrance,42.422628,-76.494367,Ithaca College
+Campus Center Entrance 2,"First floor east, near Campus Center Dining Hall, PAD","[""Campus Center""]",entrance,42.422378,-76.494136,Ithaca College
+Campus Center Entrance 3,"Second floor southwest, near free speech rock area, PAD","[""Campus Center""]",entrance,42.422394,-76.494538,Ithaca College
 Campus Center Elevator,"Located in north and south areas of Campus Center, they provide access to all floors, be aware that bottom floor entrance is through the back kitchen areas | There is an elevator at the west end of the library on the third floor that connects to the
 fourth floor of Whalen.","[""Campus Center""]",elevator,42.42239,-76.49427,Ithaca College
 Campus Center Access Phone,Accessible phones located throughout Campus Center,"[""Campus Center""]",phone,42.422311,-76.494308,Ithaca College
 Campus Center Accessible Bathrooms,Located on first and second floors (first floor is somewhat small and hard for wheel chairs,"[""Campus Center""]",bathroom,42.42239,-76.494324,Ithaca College
 Campus Center AT/ALD,Emerson Suites equipped with FM systems,"[""Campus Center""]",at/ald,42.422572,-76.494034,Ithaca College
 Campus Center Water Fountains,Accessible water fountains are located on the first and second floors,"[""Campus Center""]",water fountain,42.42239,-76.494324,Ithaca College
-Gannett Center Entrance 1,"South Entrance, PAD","[""Gannet Center""]",entrance/exit,42.42125,-76.494689,Ithaca College
-Gannett Center Entrance 2,North entrance: enter through Gannett and use the elevator to access the library. Ask the front desk for the key to operate the elevator. PAD,"[""Gannet Center""]",entrance/exit,42.421353,-76.495225,Ithaca College
+Gannett Center Entrance 1,"South Entrance, PAD","[""Gannet Center""]",entrance,42.42125,-76.494689,Ithaca College
+Gannett Center Entrance 2,North entrance: enter through Gannett and use the elevator to access the library. Ask the front desk for the key to operate the elevator. PAD,"[""Gannet Center""]",entrance,42.421353,-76.495225,Ithaca College
 Gannet Center Elevator,"Provides access to the second, third, fourth, and fifth floors
  *Ask the front desk for the key to operate the elevator down to the first floor","[""Gannet Center""]",elevator,42.421179,-76.495139,Ithaca College
 Gannet Center Access Phone,Located by south entrance,"[""Gannet Center""]",phone,42.421234,-76.494726,Ithaca College
@@ -51,10 +51,10 @@ Gannet Center Accessible Bathrooms,"Most accessible women’s bathroom located o
 | Most accessible men’s bathroom located on third floor","[""Gannet Center""]",bathroom,42.421163,-76.495129,Ithaca College
 Parking Lot H,H lot with 4 spaces,"[""Gannet Center"", ""Whalen Center for Music""]",parking,42.420933,-76.494941,Ithaca College
 Gannet Center Water Fountains,"Accessible water fountains located on second, third, and fourth floors","[""Gannet Center""]",water fountain,42.421179,-76.49508,Ithaca College
-Whalen Center for Music Entrance 1,"First floor north, PAD","[""Whalen Center for Music""]",entrance/exit,42.421285,-76.496201,Ithaca College
-Whalen Center for Music Entrance 2,"Third floor west, PAD","[""Whalen Center for Music""]",entrance/exit,42.420687,-76.49603,Ithaca College
-Whalen Center for Music Entrance 3,"Fourth floor south (through Baker Walkway), PAD","[""Whalen Center for Music""]",entrance/exit,42.420577,-76.495804,Ithaca College
-Whalen Center for Music Entrance 4,There is an east entrance into the 4th floor of Whalen via an elevator that connects to the 3rd floor of the library,"[""Gannet Center"", ""Whalen Center for Music""]",entrance/exit,42.421076,-76.495349,Ithaca College
+Whalen Center for Music Entrance 1,"First floor north, PAD","[""Whalen Center for Music""]",entrance,42.421285,-76.496201,Ithaca College
+Whalen Center for Music Entrance 2,"Third floor west, PAD","[""Whalen Center for Music""]",entrance,42.420687,-76.49603,Ithaca College
+Whalen Center for Music Entrance 3,"Fourth floor south (through Baker Walkway), PAD","[""Whalen Center for Music""]",entrance,42.420577,-76.495804,Ithaca College
+Whalen Center for Music Entrance 4,There is an east entrance into the 4th floor of Whalen via an elevator that connects to the 3rd floor of the library,"[""Gannet Center"", ""Whalen Center for Music""]",entrance,42.421076,-76.495349,Ithaca College
 Whalen Center for Music Elevators,"Located at north and south ends of the building, they provide access to all floors. | Elevator in the far south end provides access to Baker Walkway and to the J Lot","[""Gannet Center"", ""Whalen Center for Music""]",elevator,42.421076,-76.495349,Ithaca College
 Whalen Center for Music Access Phone,"Access phone on third floor by the music office in a cove, as well as in the Baker
 Hallway on P level","[""Whalen Center for Music""]",phone,42.420731,-76.495906,Ithaca College
@@ -65,43 +65,43 @@ Whalen Center for Music AT/ALD,"The Hockett Family Recital Hall is equipped with
 Parking Lot G,G lot with 2 spaces,"[""Whalen Center for Music"", ""Center for Health Sciences"", ""Hill Center""]",parking,42.420319,-76.496765,Ithaca College
 Parking Lot J,"J lot with 10 spaces (via Baker Walkway, near Towers)","[""Gannet Center"", ""Whalen Center for Music"", ""West Tower"", ""East Tower"", ""Terrace Dining Hall""]",parking,42.420315,-76.494721,Ithaca College
 Whalen Center for Music Water Fountains,Located in various places throughout the building,"[""Whalen Center for Music""]",water fountain,42.421099,-76.49588,Ithaca College
-Smiddy Hall Entrance 1,"First floor east, PAD","[""Smiddy""]",entrance/exit,42.420347,-76.498363,Ithaca College
-Smiddy Hall Entrance 2,"Second floor west, PAD","[""Smiddy""]",entrance/exit,42.420173,-76.498406,Ithaca College
+Smiddy Hall Entrance 1,"First floor east, PAD","[""Smiddy""]",entrance,42.420347,-76.498363,Ithaca College
+Smiddy Hall Entrance 2,"Second floor west, PAD","[""Smiddy""]",entrance,42.420173,-76.498406,Ithaca College
 Smiddy Hall Elevator,"Located centrally in the building, it provides access to all floors","[""Smiddy""]",elevator,42.420315,-76.498481,Ithaca College
 Smiddy Hall Access Phone,Located on second floor near west entrance,"[""Smiddy""]",phone,42.4202,-76.498369,Ithaca College
 Parking Lot F,F lot (west side of building) with 8 spaces,"[""Smiddy"", ""Center for Health Sciences"", ""Peggy Ryan Williams Center""]",parking,42.420319,-76.499216,Ithaca College
 Smiddy Hall Accessible Bathrooms,Accessible bathrooms located on each floor,"[""Smiddy""]",bathroom,42.420208,-76.498304,Ithaca College
 Smiddy Hall Water Fountains,"Accessible water fountains are located on the first, second, and third floors","[""Smiddy""]",water fountain,42.420299,-76.498396,Ithaca College
-Ceracche Center Entrance,"Main entrance, north, PAD","[""Ceracche Center""]",entrance/exit,42.418668,-76.500702,Ithaca College
+Ceracche Center Entrance,"Main entrance, north, PAD","[""Ceracche Center""]",entrance,42.418668,-76.500702,Ithaca College
 Ceracche Center Accessible Bathrooms,Located on tfirst floor,"[""Ceracche Center""]",bathroom,42.41864,-76.500504,Ithaca College
 Parking Lot K,K lot has 1 space,"[""Ceracche Center""]",parking,42.418779,-76.500702,Ithaca College
-Park Hall Roy H. Park School of Communications Entrance 1,"First floor north, near O lot, PAD","[""Park Hall Roy H. Park School of Communications""]",entrance/exit,42.424232,-76.495123,Ithaca College
-Park Hall Roy H. Park School of Communications Entrance 2,"Second floor south, PAD","[""Park Hall Roy H. Park School of Communications""]",entrance/exit,42.423895,-76.495064,Ithaca College
+Park Hall Roy H. Park School of Communications Entrance 1,"First floor north, near O lot, PAD","[""Park Hall Roy H. Park School of Communications""]",entrance,42.424232,-76.495123,Ithaca College
+Park Hall Roy H. Park School of Communications Entrance 2,"Second floor south, PAD","[""Park Hall Roy H. Park School of Communications""]",entrance,42.423895,-76.495064,Ithaca College
 Park Hall Roy H. Park School of Communications Elevator,"Located in west area of building, it provides access to all floors.","[""Park Hall Roy H. Park School of Communications""]",elevator,42.424109,-76.495214,Ithaca College
 Park Hall Roy H. Park School of Communications Accessible Bathrooms,Located on all floors,"[""Park Hall Roy H. Park School of Communications""]",bathrooms,42.424034,-76.495225,Ithaca College
 Park Hall Roy H. Park School of Communications AT/ALD,Park Auditorium is equipped with an FM system,"[""Park Hall Roy H. Park School of Communications""]",at/ald,42.423931,-76.495268,Ithaca College
 Park Hall Roy H. Park School of Communications Water Fountains,Located on first and second floors,"[""Park Hall Roy H. Park School of Communications""]",water fountain,42.424117,-76.494887,Ithaca College
 Parking Lot O,O lot with 14 spaces,"[""Park Hall Roy H. Park School of Communications"", ""Center for Natural Sciences"", ""Rothschild Place""]",parking,42.424655,-76.495139,Ithaca College
-Alumni Hall Entrance,"Main entrance, south side near parking lot, PAD","[""Alumni Hall""]",entrance/exit,42.422105,-76.500203,Ithaca College
+Alumni Hall Entrance,"Main entrance, south side near parking lot, PAD","[""Alumni Hall""]",entrance,42.422105,-76.500203,Ithaca College
 Aumni Hall Elevator,Provides access to first and second floors,"[""Alumni Hall""]",elevator,42.422176,-76.500214,Ithaca College
 Alumni Hall Parking Lot,Lot has 1 space,"[""Alumni Hall""]",parking,42.422002,-76.500112,Ithaca College
-Center for Natural Sciences Entrance 1,"First floor east (next to Park School), PAD","[""Center for Natural Sciences""]",entrance/exit,42.423531,-76.495311,Ithaca College
-Center for Natural Sciences Entrance 2,"Second floor east via ramp, PAD","[""Center for Natural Sciences""]",entrance/exit,42.42321,-76.495225,Ithaca College
-Center for Natural Sciences Entrance 3,"Second floor west via ramp, PAD","[""Center for Natural Sciences""]",entrance/exit,42.423079,-76.495547,Ithaca College
+Center for Natural Sciences Entrance 1,"First floor east (next to Park School), PAD","[""Center for Natural Sciences""]",entrance,42.423531,-76.495311,Ithaca College
+Center for Natural Sciences Entrance 2,"Second floor east via ramp, PAD","[""Center for Natural Sciences""]",entrance,42.42321,-76.495225,Ithaca College
+Center for Natural Sciences Entrance 3,"Second floor west via ramp, PAD","[""Center for Natural Sciences""]",entrance,42.423079,-76.495547,Ithaca College
 Center for Natural Sciences Elevator,"Located in southwest corner of building, it provides access to all floors","[""Center for Natural Sciences""]",elevator,42.423052,-76.495413,Ithaca College
 Center for Natural Sciences Access Phone,Located throughout building,"[""Center for Natural Sciences""]",phone,42.423337,-76.495434,Ithaca College
 Center for Natural Sciences Accessible Bathrooms,"Accessible bathroom located on each floor in the center hallway between the west and
 east entrances","[""Center for Natural Sciences""]",bathroom,42.423147,-76.495349,Ithaca College
 Center for Natural Sciences Water Fountain,Accessible water fountains located throughout the building.,"[""Center for Natural Sciences""]",water fountain,42.423099,-76.495322,Ithaca College
-Center for Health Sciences Entrance 1,"First floor north, PAD","[""Center for Health Sciences""]",entrance/exit,42.420236,-76.498009,Ithaca College
-Center for Health Sciences Entrance 2,"Second floor north, PAD","[""Center for Health Sciences""]",entrance/exit,42.420204,-76.498052,Ithaca College
-Center for Health Sciences Entrance 3,"Second floor west, PAD (near F lot drop off circle","[""Center for Health Sciences""]",entrance/exit,42.419919,-76.497886,Ithaca College
+Center for Health Sciences Entrance 1,"First floor north, PAD","[""Center for Health Sciences""]",entrance,42.420236,-76.498009,Ithaca College
+Center for Health Sciences Entrance 2,"Second floor north, PAD","[""Center for Health Sciences""]",entrance,42.420204,-76.498052,Ithaca College
+Center for Health Sciences Entrance 3,"Second floor west, PAD (near F lot drop off circle","[""Center for Health Sciences""]",entrance,42.419919,-76.497886,Ithaca College
 Center for Health Sciences Elevator,"Located approximately 250 ft. from west entrance, it provides access to all floors","[""Center for Health Sciences""]",elevator,42.419891,-76.498312,Ithaca College
 Center for Health Sciences Access Phone,"First floor, near computer lab | Second floor, near west entrance
 | Third floor, near doorway that connects CHS and Smiddy","[""Center for Health Sciences""]",phone,42.420001,-76.498087,Ithaca College
 Center for Health Sciences Accessible Bathrooms,Accessible bathrooms located on each floor,"[""Center for Health Sciences""]",bathroom,42.420112,-76.497926,Ithaca College
 Center for Health Sciences Water Fountain,Accessible water fountains located throughout building,"[""Center for Health Sciences""]",water fountain,42.420112,-76.497926,Ithaca College
-Fitness Center Entrance,"Main entrance, west side, PAD","[""Fitness Center""]",entrance/exit,42.422636,-76.492387,Ithaca College
+Fitness Center Entrance,"Main entrance, west side, PAD","[""Fitness Center""]",entrance,42.422636,-76.492387,Ithaca College
 Fitness Center Elevator,Provides access to all floors and is centrally located,"[""Fitness Center""]",elevator,42.422699,-76.492285,Ithaca College
 Fitness Center Accessible Bathrooms,"Accessible men’s and women’s bathrooms are located on the first floor and in the locker
 rooms on the bottom floor
@@ -112,42 +112,42 @@ p.m., Saturday 10:00 a.m. – 7:00 p.m., Sunday 11:00 a.m.- 11:00 p.m.
 | Hours vary for holidays and breaks; contact front desk (607 274 3399)","[""Fitness Center""]",contact info,42.422636,-76.492253,Ithaca College
 Fitness Center Water Fountain,Accessible water fountains located throughout building,"[""Fitness Center""]",water fountain,42.422636,-76.492253,Ithaca College
 Parking Lot B,Lot B has 2 spaces,"[""Fitness Center"", ""Athletics and Events Center""]",parking,42.423162,-76.491787,Ithaca College
-Terrace Dining Hall Entrance,"Southwest side of building, near T lot a bit of a maze","[""Terrace 2"",""Terrace Dining Hall""]",entrance/exit,42.419793,-76.496303,Ithaca College
+Terrace Dining Hall Entrance,"Southwest side of building, near T lot a bit of a maze","[""Terrace 2"",""Terrace Dining Hall""]",entrance,42.419793,-76.496303,Ithaca College
 Parking Lot T,Lot T has 1 space,"[""Terrace 2"",""Terrace Dining Hall""]",parking,42.419745,-76.497028,Ithaca College
-Rothschild Place Entrance,"First floor, ramp facing east, PAD","[""Rothschild Place""]",entrance/exit,42.42443,-76.493868,Ithaca College
+Rothschild Place Entrance,"First floor, ramp facing east, PAD","[""Rothschild Place""]",entrance,42.42443,-76.493868,Ithaca College
 Rothschild Place Accessible Bathrooms,"First floor, centrally located","[""Rothschild Place""]",bathroom,42.424382,-76.493954,Ithaca College
 Rothschild Place Water Fountain,A water cooler is located in the main office of the Academic Advising Center.,"[""Rothschild Place""]",water fountain,42.424362,-76.493938,Ithaca College
 Adjacent to Rothschil Place Parking,2 spaces,"[""Rothschild Place"", ""Park Hall Roy H. Park School of Communication""]",parking,42.42441,-76.4936,Ithaca College
-A&E Center Entrance 1,"First floor east, by the drop off area, PAD","[""Athletics and Events Center""]",entrance/exit,42.423249,-76.489912,Ithaca College
-A&E Center Entrance 1,"Second floor, southwest entrance and southeast entrance, PAD","[""Athletics and Events Center""]",entrance/exit,42.422758,-76.49047,Ithaca College
+A&E Center Entrance 1,"First floor east, by the drop off area, PAD","[""Athletics and Events Center""]",entrance,42.423249,-76.489912,Ithaca College
+A&E Center Entrance 1,"Second floor, southwest entrance and southeast entrance, PAD","[""Athletics and Events Center""]",entrance,42.422758,-76.49047,Ithaca College
 A&E Center Elevator,"Centrally located, access to all floors","[""Athletics and Events Center""]",elevator,42.422845,-76.490051,Ithaca College
 A&E Center Accessible Bathrooms,"First floor, south entrance | Second floor, southeast entrance","[""Athletics and Events Center""]",bathroom,42.42306,-76.490129,Ithaca College
 A&E Center Water Fountain,Throughout building,"[""Athletics and Events Center""]",water fountain,42.42306,-76.490129,Ithaca College
 A&E Center Glazer Arena,Door is not PAD,"[""Athletics and Events Center""]",other,42.422913,-76.490059,Ithaca College
 Parking Lot M,Lot M has 6 spaces,"[""Athletics and Events Center""]",parking,42.422196,-76.489244,Ithaca College
 Parking Lot A,Lot A has 12 spaces,"[""Athletics and Events Center"", ""Fitness Center""]",parking,42.422022,-76.491368,Ithaca College
-Dilingham Center Entrance 1,Two entrances on north ground floor (G),"[""Dilingham Center""]",entrance/exit,42.42125,-76.498111,Ithaca College
-Dilingham Center Entrance 2,"South first floor (LL), accessible ramp","[""Dilingham Center""]",entrance/exit,42.420834,-76.498245,Ithaca College
+Dilingham Center Entrance 1,Two entrances on north ground floor (G),"[""Dilingham Center""]",entrance,42.42125,-76.498111,Ithaca College
+Dilingham Center Entrance 2,"South first floor (LL), accessible ramp","[""Dilingham Center""]",entrance,42.420834,-76.498245,Ithaca College
 Dilingham Center Elevator,"North and South elevators, access to all floors","[""Dilingham Center""]",elevator,42.421238,-76.498406,Ithaca College
 Dilingham Center Accessible Bathrooms,Mezzanine level (ML) which is unisex,"[""Dilingham Center""]",bathroom,42.421016,-76.498261,Ithaca College
 Dilingham Center Water Fountain,Throughout the building,"[""Dilingham Center""]",water fountain,42.420996,-76.498438,Ithaca College
 Parking Lot P,Lot P has 3 spaces,"[""Dilingham Center"", ""Peggy Ryan Williams Center""]",parking,42.421519,-76.498685,Ithaca College
-"Center for Business and Sustainable Enterprise, Dorothy D. and Roy H. Park Entrance 1","First floor south via walkway from Job Hall, PAD","[""Center for Business and Sustainable Enterprise, Dorothy D. and Roy H. Park""]",entrance/exit,42.421978,-76.497097,Ithaca College
-"Center for Business and Sustainable Enterprise, Dorothy D. and Roy H. Park Entrance 2","First floor west, PAD","[""Center for Business and Sustainable Enterprise, Dorothy D. and Roy H. Park""]",entrance/exit,42.421994,-76.497307,Ithaca College
-"Center for Business and Sustainable Enterprise, Dorothy D. and Roy H. Park Entrance 3","First floor east, PAD","[""Center for Business and Sustainable Enterprise, Dorothy D. and Roy H. Park""]",entrance/exit,42.422113,-76.496813,Ithaca College
-"Center for Business and Sustainable Enterprise, Dorothy D. and Roy H. Park Entrance 4","Second floor south over walkway, PAD","[""Center for Business and Sustainable Enterprise, Dorothy D. and Roy H. Park""]",entrance/exit,42.421967,-76.497113,Ithaca College
+"Center for Business and Sustainable Enterprise, Dorothy D. and Roy H. Park Entrance 1","First floor south via walkway from Job Hall, PAD","[""Center for Business and Sustainable Enterprise, Dorothy D. and Roy H. Park""]",entrance,42.421978,-76.497097,Ithaca College
+"Center for Business and Sustainable Enterprise, Dorothy D. and Roy H. Park Entrance 2","First floor west, PAD","[""Center for Business and Sustainable Enterprise, Dorothy D. and Roy H. Park""]",entrance,42.421994,-76.497307,Ithaca College
+"Center for Business and Sustainable Enterprise, Dorothy D. and Roy H. Park Entrance 3","First floor east, PAD","[""Center for Business and Sustainable Enterprise, Dorothy D. and Roy H. Park""]",entrance,42.422113,-76.496813,Ithaca College
+"Center for Business and Sustainable Enterprise, Dorothy D. and Roy H. Park Entrance 4","Second floor south over walkway, PAD","[""Center for Business and Sustainable Enterprise, Dorothy D. and Roy H. Park""]",entrance,42.421967,-76.497113,Ithaca College
 "Center for Business and Sustainable Enterprise, Dorothy D. and Roy H. Park Elevator","North and south elevators, access to all floors","[""Center for Business and Sustainable Enterprise, Dorothy D. and Roy H. Park""]",elevator,42.422149,-76.497103,Ithaca College
 "Center for Business and Sustainable Enterprise, Dorothy D. and Roy H. Park Accessible Bathrooms",First floor centrally located | Second floor East,"[""Center for Business and Sustainable Enterprise, Dorothy D. and Roy H. Park""]",bathroom,42.422117,-76.497065,Ithaca College
 "Center for Business and Sustainable Enterprise, Dorothy D. and Roy H. Park Water Fountains",Throughout building,"[""Center for Business and Sustainable Enterprise, Dorothy D. and Roy H. Park""]",water fountain,42.422066,-76.497006,Ithaca College
-Hill Center Entrance 1,"First floor west, PAD","[""Hill Center""]",entrance/exit,42.420196,-76.49714,Ithaca College
-Hill Center Entrance 2,"Second floor east, PAD","[""Hill Center""]",entrance/exit,42.420786,-76.49677,Ithaca College
+Hill Center Entrance 1,"First floor west, PAD","[""Hill Center""]",entrance,42.420196,-76.49714,Ithaca College
+Hill Center Entrance 2,"Second floor east, PAD","[""Hill Center""]",entrance,42.420786,-76.49677,Ithaca College
 Hill Center Elevator,Centrally located,"[""Hill Center""]",elevator,42.420672,-76.496867,Ithaca College
 Hill Center Accessible Bathrooms,First floor centrally located and within locker rooms,"[""Hill Center""]",bathroom,42.420545,-76.496979,Ithaca College
 Hill Center Water Fountains,Throughout building,"[""Hill Center""]",water fountain,42.420545,-76.496979,Ithaca College
-Peggy Ryan Williams Center Garden Entrance,"Garden Level: The accessible entrance/exit is located to the right of the main entrance,
-far back of the building (north of the main entrance), PAD","[""Peggy Ryan Williams Center""]",entrance/exit,42.421792,-76.498294,Ithaca College
+Peggy Ryan Williams Center Garden Entrance,"Garden Level: The accessible entrance is located to the right of the main entrance,
+far back of the building (north of the main entrance), PAD","[""Peggy Ryan Williams Center""]",entrance,42.421792,-76.498294,Ithaca College
 Peggy Ryan Williams Center Garden Entrance 1,"First Floor: Front of the building at the main entrance (off P Lot Admissions parking),
-PAD ","[""Peggy Ryan Williams Center""]",entrance/exit,42.421658,-76.498669,Ithaca College
+PAD ","[""Peggy Ryan Williams Center""]",entrance,42.421658,-76.498669,Ithaca College
 Peggy Ryan Williams Center Elevators,"Garden Level: Enter the building, make a right around the staircase
  First Floor:
  Left of the main entrance, make your first left past the main entrance.
@@ -157,14 +157,14 @@ Peggy Ryan Williams Center Accessible Bathrooms,"Garden level: Facing the back a
 brings you to the Restrooms (next to the accessible elevator)
  First floor: Across from the accessible elevator","[""Peggy Ryan Williams Center""]",bathroom,42.421777,-76.498632,Ithaca College
 Peggy Ryan Williams Center Water Fountains,Throughout building,"[""Peggy Ryan Williams Center""]",water fountain,42.421749,-76.498916,Ithaca College
-Center for Public Safety and General Services Entrance 1,"First floor, northwest, PAD","[""Center for Public Safety and General Services"", ""Mail Center""]",entrance/exit,42.427043,-76.495772,Ithaca College
-Center for Public Safety and General Services Entrance 2,"Second floor, south, PAD","[""Center for Public Safety and General Services"", ""Mail Center""]",entrance/exit,42.426992,-76.495397,Ithaca College
+Center for Public Safety and General Services Entrance 1,"First floor, northwest, PAD","[""Center for Public Safety and General Services"", ""Mail Center""]",entrance,42.427043,-76.495772,Ithaca College
+Center for Public Safety and General Services Entrance 2,"Second floor, south, PAD","[""Center for Public Safety and General Services"", ""Mail Center""]",entrance,42.426992,-76.495397,Ithaca College
 Center for Public Safety and General Services Elevator,"First floor, southwest
  Second floor, southwest","[""Center for Public Safety and General Services"", ""Mail Center""]",elevator,42.426932,-76.495552,Ithaca College
 Center for Public Safety and General Services Parking,2 spaces,"[""Center for Public Safety and General Services"", ""Mail Center""]",parking,42.426988,-76.495316,Ithaca College
 Center for Public Safety and General Services Accessible Bathrooms,"First floor south
  Four restrooms on the second floor","[""Center for Public Safety and General Services"", ""Mail Center""]",bathroom,42.427075,-76.495574,Ithaca College
 Center for Public Safety and General Services Water Fountain,To the right of the main entrance on the second floor,"[""Center for Public Safety and General Services"", ""Mail Center""]",water fountain,42.427099,-76.495434,Ithaca College
-Towers Entrance,"East and west tower ends of the main hallways, PAD user ramps at each tower","[""West Tower, ""East Tower""]",entrance/exit,42.420616,-76.494512,Ithaca College
+Towers Entrance,"East and west tower ends of the main hallways, PAD user ramps at each tower","[""West Tower, ""East Tower""]",entrance,42.420616,-76.494512,Ithaca College
 Towers Elevators,In each tower centralized,"[""West Tower, ""East Tower""]",elevator,42.420525,-76.495048,Ithaca College
 Towers Accessible Bathrooms,Next to restrooms entrance in the middle of the main hallway on main level below dining hall,"[""West Tower, ""East Tower""]",bathroom,42.420573,-76.494426,Ithaca College
