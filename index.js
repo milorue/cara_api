@@ -2,6 +2,7 @@ const{ Stitch, UserPasswordCredential, RemoteMongoClient} = require('mongodb-sti
 
 const express = require('express');
 const app = express()
+const path = require('path')
 
 const port = process.env.PORT || 3000 // use env port fallback to port 3000
 
@@ -18,17 +19,39 @@ const Astar = require('node-astar')
 const csv2json = require('csvjson-csv2json')
 const fs = require('fs')
 
+// upload requirements
+const fileUpload = require('express-fileupload')
+const cors = require('cors')
+const bodyParser = require('body-parser')
+const morgan = require('morgan')
+const _ = require('lodash')
+
 // geographic helper methods
 const turf = require('@turf/turf')
 
+// home landing
 app.get('/', (req, res) => {
     res.send('Visit /hazards for a list of all hazards')
 })
 
+// middleware definitions
+
+// enable file upload
+app.use(fileUpload({
+    createParentPath: true,
+    limits:{
+        
+    }
+}));
+
+// other middleware
+app.use(cors());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(morgan('dev'));
 
 
 // --- Stitch Client OAuth ---
-
 // stitch initialization routine
 const stitch_client = Stitch.initializeDefaultAppClient(app_id) // initialize default app client using credentials
 
@@ -44,8 +67,59 @@ stitch_client.auth.loginWithCredential(new UserPasswordCredential(usr, pwd))
 // collections to user
 const db = 'cara'
 const markers = 'markers'
+// --- Stitch Client OAuth --- *end
 
-// --- Stitch Client OAuth ---
+// handleCSVUpload()
+// description: handles a csv payload by serving a form to the user to upload a csv
+// inputs: csv file
+// outputs: true or false of loaded into db
+
+function handleCSVUpload(){
+
+    app.get('/form-csv', (req, res) =>{
+        res.sendFile(path.join(__dirname + '/csv_upload.html'))
+    })
+
+    app.post('/upload-csv', (req, res) =>{
+        
+        try{
+            console.log(req.files)
+            if(!req.files){
+                res.send({
+                    status: false,
+                    message: 'No file uploaded'
+                });
+            }else{
+                var file = req.files.hazard
+
+                if(file.name.includes('.csv')){
+                    file.mv('./csv_files/' + file.name)
+
+                    res.send({
+                        status: true,
+                        message: 'File upload success',
+                        data: {
+                           name: file.name,
+                           mimetype: file.mimetype,
+                            size: file.size
+                        }
+                    })
+                } else{
+                    res.send({
+                        status: false,
+                        message: 'File must be a .csv'
+                    })
+                }
+
+                
+            }
+        }
+        catch (err){
+            res.status(500).send(err)
+        }
+        
+    })
+}
 
 // processCSV()
 // description: processes raw csv text into a json object array then injects it
@@ -187,7 +261,7 @@ function loadBuildings(client, db, collection){
             })
         })
 
-        // get hazards near certain building
+        // get hazards near certain building (function for revealing nearby hazards works in routing protocol as well)
         app.get('/buildings/getnear/:buildingId', (req, res) =>{
 
             var data = null;
@@ -352,6 +426,9 @@ function createHazard(name, desc, building, type, lat, lng, college){ // could p
 loadHazards(stitch_client, 'cara', 'markers')
 // loads buildings for api call
 loadBuildings(stitch_client, 'cara', 'buildings')
+
+//handler for csv uploads
+handleCSVUpload();
 
 // testing new a star implementation
 // calculateRawRoute(stitch_client, 'cara', 'markers')
