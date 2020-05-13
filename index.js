@@ -69,6 +69,8 @@ const db = 'cara'
 const markers = 'markers'
 // --- Stitch Client OAuth --- *end
 
+// --------------- DATA PROCESSING ------------------------------
+
 // handleCSVUpload()
 // description: handles a csv payload by serving a form to the user to upload a csv
 // inputs: csv file
@@ -80,7 +82,7 @@ function handleCSVUpload(){
         res.sendFile(path.join(__dirname + '/csv_upload.html'))
     })
 
-    app.post('/upload-csv', (req, res) =>{
+    app.post('/uploaded-csv', (req, res) =>{
         
         try{
             console.log(req.files)
@@ -90,10 +92,19 @@ function handleCSVUpload(){
                     message: 'No file uploaded'
                 });
             }else{
-                var file = req.files.hazard
+                var file = req.files.hazard // csv file payload
+                var types = req.body.type // type to route to proper db channels
+                
 
-                if(file.name.includes('.csv')){
+                if(file.name.includes('.csv')){ // checks for .csv files working on support excel format
                     file.mv('./csv_files/' + file.name)
+
+                    filePath = './csv_files/' + file.name
+
+                    // process and upload payload
+                    processCSVHazards(filePath, types)
+
+
 
                     res.send({
                         status: true,
@@ -126,6 +137,8 @@ function handleCSVUpload(){
 // inputs: string csv
 // outputs: json array
 
+// note: validate csv needed
+
 function processCSVHazards(csvFilePath, type){
 
     if(type === 'hazard'){
@@ -137,11 +150,22 @@ function processCSVHazards(csvFilePath, type){
             else{
                 csv_data = data
                 var json_data = csv2json(csv_data, {parseNumbers: true, parseJSON: true});
+
                 for(var i in json_data){
-                    insertHazard(json_data[i], stitch_client, db, markers)
+                    if(json_data[i].name !== null && json_data[i].description !== null &&
+                        json_data[i].buildings !== null && json_data[i].type !== null && json_data[i].lat !== null &&
+                        json_data[i].lng !== null){ // dont care about college as some hazards could not be tied to a college down the line
+                            // valid csv file insert it and respond that its valid
+                            insertHazard(json_data[i], stitch_client, db, markers)
+                    }else{
+                        //invalid csv
+                        console.log('invalid csv') // needs to report out to the response obj somehow
+                    } 
+                    
                 }
             }
         })
+        console.log('hazard csv success')
     }else if(type === 'building'){
         fs.readFile(csvFilePath, 'utf8', (err, data) =>{
             if(err){
@@ -156,14 +180,16 @@ function processCSVHazards(csvFilePath, type){
                 }
             }
         })
+        console.log("building csv success")
     }else{
         // do nothing
+        console.log('no type specified')
     }
 
     
 }
 
-
+// ---------------------- LOAD FUNCTIONS -------------------------------------
 
 // loadHazards()
 // description: loads data object from mongodb collection with filters
@@ -246,6 +272,19 @@ function loadBuildings(client, db, collection){
     const mongodb_collection = mongodb_db.collection(collection)
     const mongodb_hazards = mongodb_db.collection('markers')
 
+        app.get('/buildings', (req, res) =>{
+            var data = null
+
+            data = mongodb_collection.find({recent: true})
+            .asArray()
+            .then(docs => {
+                res.json(docs)
+            })
+            .catch(err =>{
+                console.error(err)
+            })
+        })
+
         // sort buildings by college
         app.get('/buildings/college/:collegeId', (req, res) =>{
 
@@ -303,6 +342,8 @@ function loadBuildings(client, db, collection){
         })
 }
 
+// ------------------- INSERT FUNCTIONS ------------------
+
 // insertHazard()
 // description: handles a new hazard request and adds it to the server
 
@@ -313,25 +354,38 @@ function insertHazard(hazard, client, db, collection){
 
     // need to add a duplicate checker but for now its fine
 
-    mongodb_collection.insertOne({
-        name: hazard.name,
-        description: hazard.description,
-        buildings: hazard.buildings,
-        type: hazard.type,
-        college: hazard.college,
-        coordinates: {
-            latitude: hazard.lat,
-            longitude: hazard.lng
-        },
-        date: new Date(),
-        recent: true
+    // duplicate check *if building or hazard is a duplicate it will
+    // not insert and will log a duplicate error (checks name, desc, college, type for specificity and coords as they are least likely to accidently become duplicates (coordinate duplicates might need a better method as ...
+    // certain hazards could exist on the same coordinate location
+    // console.log(hazard.name)
+    mongodb_collection.findOne({name: hazard.name, description: hazard.description, college: hazard.college, type: hazard.type})
+    .then(docs => {
+        if(docs === undefined){
+            mongodb_collection.insertOne({
+                name: hazard.name,
+                description: hazard.description,
+                buildings: hazard.buildings,
+                type: hazard.type,
+                college: hazard.college,
+                coordinates: {
+                    latitude: hazard.lat,
+                    longitude: hazard.lng
+                },
+                date: new Date(),
+                recent: true
+            })
+            .then(() =>{
+                console.log('Insert of hazard: ' + hazard.name + ' success')
+            })
+            .catch(err => {
+                console.error(err)
+            })
+        }else{
+            console.log('Duplicate error: ' + hazard.name + ' is a duplicate')
+        }
     })
-    .then(() =>{
-        console.log('Insert of hazard: ' + hazard.name + ' success')
-    })
-    .catch(err => {
-        console.error(err)
-    })
+
+    
 
 }
 
@@ -340,22 +394,31 @@ function insertBuilding(building, client, db, collection){
     const mongodb_db = mongodb_client.db(db)
     const mongodb_collection = mongodb_db.collection(collection)
 
-    mongodb_collection.insertOne({
-        college: building.campus,
-        building: building.building,
-        coordinates: {
-            latitude: building.latitude,
-            longitude: building.longitude
-        },
-        date: new Date(),
-        recent: true
+    mongodb_collection.findOne({college: building.campus, building: building.campus, coordinates: {latitude: building.latitude, longitude: building.longitude}})
+    .then(docs =>{
+        if(docs === undefined){
+            mongodb_collection.insertOne({
+                college: building.campus,
+                building: building.building,
+                coordinates: {
+                    latitude: building.latitude,
+                    longitude: building.longitude
+                },
+                date: new Date(),
+                recent: true
+            })
+            .then(() =>{
+                console.log('Insert of building: ' + building.building + ' success')
+            })
+            .catch(err =>{
+                console.error(err)
+            })
+        }else{
+            console.log("Duplicate Building Error: " + building.building + ' | ' + building.campus)
+        }
     })
-    .then(() =>{
-        console.log('Insert of building: ' + building.building + ' success')
-    })
-    .catch(err =>{
-        console.error(err)
-    })
+
+    
 
 }
 
@@ -434,7 +497,7 @@ handleCSVUpload();
 // calculateRawRoute(stitch_client, 'cara', 'markers')
 
 // processes a csv file into json to be injected has to inject cause promise objs are odd
-// processCSVHazards('ic_buildings.csv', 'building')
+// processCSVHazards('csv_files/ic_hazards.csv', 'hazard')
 // commented cause its been processed (will add an end point for this)
 
 
