@@ -30,7 +30,7 @@
     "csvjson-csv2json": "^5.0.6",
     "express": "^4.17.1",
     "express-fileupload": "^1.1.7-alpha.3",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "mongodb-stitch-browser-sdk": "^4.8.0",
     "mongodb-stitch-server-sdk": "^4.8.0",
     "morgan": "^1.10.0",
